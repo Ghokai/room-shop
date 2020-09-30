@@ -103,7 +103,10 @@ const Index = () => {
       <div className="slider">
         <DesktopMenu />
         <MobileMenu />
-        <img src={sliderContent[slideIndex].image} />
+        <img
+          alt={sliderContent[slideIndex].title}
+          src={sliderContent[slideIndex].image}
+        />
         <SlideButtons setSlideIndex={setSlideIndex} />
       </div>
       <div className="maintext">
@@ -117,7 +120,7 @@ const Index = () => {
         <SlideButtons setSlideIndex={setSlideIndex} />
       </div>
       <div className="left">
-        <img src="/images/image-about-dark.jpg" />
+        <img src="/images/image-about-dark.jpg" alt="left-image" />
       </div>
       <div className="mid">
         <div className="title">
@@ -133,7 +136,7 @@ const Index = () => {
         </div>
       </div>
       <div className="right">
-        <img src="/images/image-about-light.jpg" />
+        <img src="/images/image-about-light.jpg" alt="right-image" />
       </div>
     </div>
   );
